@@ -1,0 +1,95 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #695780;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+
+  background-image:
+    radial-gradient(circle at 100% 150%, #695780 24%, #4f376e 25%, #4f376e 28%, #695780 29%, #695780 36%, #4f376e 36%, #4f376e 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0 150%, #695780 24%, #4f376e 25%, #4f376e 28%, #695780 29%, #695780 36%, #4f376e 36%, #4f376e 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50% 100%, #4f376e 10%, #695780 11%, #695780 23%, #4f376e 24%, #4f376e 30%, #695780 31%, #695780 43%, #4f376e 44%, #4f376e 50%, #695780 51%, #695780 63%, #4f376e 64%, #4f376e 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, #4f376e 5%, #695780 6%, #695780 15%, #4f376e 16%, #4f376e 20%, #695780 21%, #695780 30%, #4f376e 31%, #4f376e 35%, #695780 36%, #695780 45%, #4f376e 46%, #4f376e 49%, transparent 50%, transparent),
+    radial-gradient(circle at 0 50%, #4f376e 5%, #695780 6%, #695780 15%, #4f376e 16%, #4f376e 20%, #695780 21%, #695780 30%, #4f376e 31%, #4f376e 35%, #695780 36%, #695780 45%, #4f376e 46%, #4f376e 49%, transparent 50%, transparent);
+  background-size: 100px 50px;
+}
+
+.voiceinator {
+  padding: 2rem;
+  width: 50rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  position: relative;
+  background: white;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  width: calc(100% + 4rem);
+  margin: -2rem 0 2rem -2rem;
+  padding: .5rem;
+  background: #47d4a5;
+  border-bottom: 5px solid #47d4a5;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 3px 3px 0 #47d4a5;
+}
+
+.voiceinator input,
+.voiceinator button,
+.voiceinator select,
+.voiceinator textarea {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: 0;
+  font-size: 2rem;
+  background: #F7F7F7;
+  outline: 0;
+}
+
+textarea {
+  height: 20rem;
+}
+
+input[type="select"] {}
+
+.voiceinator button {
+  padding: 10px;
+  background: #47d4a5;
+  border: 0;
+  width: 49%;
+  float: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 0;
+  font-size: 2rem;
+  border-bottom: 5px solid #47d4a5;
+  cursor: pointer;
+  position: relative;
+}
+
+.voiceinator button:active {
+  top: 2px;
+}
+
+.voiceinator button:nth-of-type(1) {
+  margin-right: 2%;
+}
